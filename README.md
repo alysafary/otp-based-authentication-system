@@ -1,8 +1,3 @@
-Sure! Here's a `README.md` file tailored for your project, based on the information you've provided:
-
----
-
-```markdown
 # Secure OTP-Based Authentication System
 
 This project implements a secure, rate-limited login and registration system using Django. Users can authenticate via one-time passwords (OTPs) or a traditional password-based login. The system includes protections against brute-force attacks by limiting suspicious attempts based on IP and phone number.
@@ -20,28 +15,9 @@ This project implements a secure, rate-limited login and registration system usi
 - Clear feedback on blocked attempts
 - Postman collection included for easy testing
 
----
-
-## 🐍 Tech Stack
-
-- Python 3.10+
-- Django
-- Django REST Framework
-- Redis (for caching)
-- Poetry (for dependency management)
-- Docker + Docker Compose (for containerized development)
-- Pytest (for testing)
-
----
-
 ## 📦 Installation
 
 ### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/otp-auth-system.git
-cd otp-auth-system
-```
 
 ### 2. Install dependencies using Poetry
 
@@ -83,7 +59,7 @@ docker-compose run web poetry run pytest
 
 ## 📬 API Testing
 
-A **Postman Collection** is available at the root of the project (`otp-auth.postman_collection.json`) to help you test the available endpoints.
+A **Postman Collection** is available at the root of the project (`Ubaar.postman_collection.json`) to help you test the available endpoints.
 
 Steps:
 
@@ -96,13 +72,13 @@ Steps:
 ## 📂 Project Structure
 
 ```
-├── app/                            # Django project source code
+├── project/                            # Django project source code
+├── users/                            # Django app
 ├── tests/                          # Pytest test cases
 ├── docker-compose.yml             # Docker Compose setup
 ├── Dockerfile                     # Dockerfile for web app
 ├── pyproject.toml                 # Poetry configuration
-├── otp-auth.postman_collection.json  # Postman API collection
-└── README.md                      # This file
+└── Ubaar.postman_collection.json  # Postman API collection
 ```
 
 ---
@@ -116,28 +92,3 @@ Steps:
 | POST   | `/login/verify/`           | Verify OTP code                        |
 | POST   | `/signup/complete/`        | Complete registration after OTP        |
 
----
-
-## 🛡 Security Notes
-
-- All OTPs are stored temporarily in Redis with a short expiration time.
-- Login attempts are tracked and blocked if they exceed a safe threshold.
-- Designed to prevent brute-force attacks and abuse of the login system.
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙌 Contribution
-
-Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request.
-
-```
-
----
-
-Let me know if you'd like me to tailor this even further — like adding example requests or setup instructions for a specific environment.
