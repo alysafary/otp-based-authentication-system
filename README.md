@@ -1,4 +1,3 @@
-```markdown
 # Secure OTP-Based Authentication System
 
 This project implements a secure, rate-limited login and registration system using Django. Users can authenticate via one-time passwords (OTPs) or a traditional password-based login. The system includes protections against brute-force attacks by limiting suspicious attempts based on IP and phone number.
