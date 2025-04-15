@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8080/api/login/",
+					"raw": "http://127.0.0.1:8080/api/login/request/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -54,7 +54,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8080/api/verify-otp/",
+					"raw": "http://127.0.0.1:8080/api/login/verify/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -87,7 +87,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8080/api/authenticate/",
+					"raw": "http://127.0.0.1:8080/api/login/password/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -120,7 +120,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8080/api/signup-complete/?",
+					"raw": "http://127.0.0.1:8080/api/signup/complete/?",
 					"protocol": "http",
 					"host": [
 						"127",
