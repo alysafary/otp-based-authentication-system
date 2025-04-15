@@ -1,0 +1,20 @@
+services:
+  web:
+    build:
+      context: .
+      target: development
+    restart: on-failure
+    command: >
+      sh -c "./manage.py migrate &&
+      ./manage.py runserver 0.0.0.0:8080"
+    volumes:
+      - .:/app
+    environment:
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,0.0.0.0
+      POETRY_CACHE_DIR: /app/.quera/cache/poetry
+    ports:
+      - 8080:8080
+    logging:
+      driver: local
+
+
